@@ -195,11 +195,11 @@ export default function TreeD3() {
           {(name.charAt(0) || '?').toUpperCase()}
         </text>
         <g className="rd3t-label" onClick={() => handleNodeClick(nodeDatum)}>
-          <text textAnchor="start" x="40" fill="#333" fontWeight="bold">
+          <text className="rd3t-label__title" textAnchor="start" x="40" fill="#333" fontWeight="bold">
             {name}
           </text>
           {attributes?.email && (
-            <text x="40" dy="1.2em" fill="#555" fontSize="12">
+            <text className="rd3t-label__attributes" x="40" dy="1.2em" fill="#555" fontSize="12">
               email: {attributes.email}
             </text>
           )}
