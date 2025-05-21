@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌳 MLM Binary Tree – Frontend
 
-## Getting Started
+Frontend for an interactive MLM (Multi-Level Marketing) binary structure visualization system. Built using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, **shadcn/ui**, and **React D3 Tree** for dynamic tree visualization.
 
-First, run the development server:
+---
+
+## ✨ Key Features
+
+- **Binary Tree Structure**: Each member can have a maximum of 2 downlines.
+- **Add Root Member**: Available when data is empty or no root member exists.
+- **Node Interaction**:
+  - Click a node to view details, edit, add downline, or delete.
+  - Deletion can be performed for a single member or cascaded (including all downlines).
+- **Collapse/Expand**: Click the circle on a node to open or close a subtree.
+- **Search Functionality**:
+  - Find members by name, email, or phone number.
+  - Display search results information along with uplines and downlines.
+  - Automatically highlight and center the view on the search result node.
+
+---
+
+## 🛠️ Technologies Used
+
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [React D3 Tree](https://github.com/bkrem/react-d3-tree)
+- [Vercel](https://vercel.com/) for deployment
+
+---
+
+## 🚀 Installation & Running the Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/mlm-binary.git
+cd mlm-binary/apps/frontend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the root directory and fill it with:
+
+```env
+NEXT_PUBLIC_API_URL=https://your-backend-url.com
+```
+
+Or copy from the example:
+
+```bash
+cp .env.example .env.local
+```
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Access the application at: http://localhost:3000
