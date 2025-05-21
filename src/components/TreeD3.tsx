@@ -204,7 +204,7 @@ export default function TreeD3() {
             </text>
           )}
           {attributes?.phone && (
-            <text x="40" dy="2.4em" fill="#555" fontSize="12">
+            <text className="rd3t-label__attributes" x="40" dy="2.4em" fill="#555" fontSize="12">
               phone: {attributes.phone}
             </text>
           )}
