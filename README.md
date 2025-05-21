@@ -9,7 +9,7 @@ Frontend for an interactive MLM (Multi-Level Marketing) binary structure visuali
 - **Binary Tree Structure**: Each member can have a maximum of 2 downlines.
 - **Add Root Member**: Available when data is empty or no root member exists.
 - **Node Interaction**:
-  - Click a node to view details, edit, add downline, or delete.
+  - Click a detail besides node to view details, edit, add downline, or delete.
   - Deletion can be performed for a single member or cascaded (including all downlines).
 - **Collapse/Expand**: Click the circle on a node to open or close a subtree.
 - **Search Functionality**:
